@@ -26,4 +26,4 @@ npm run lint
 ```
 
 ### Version
-- v.0.0.1
+- v.0.0.3
