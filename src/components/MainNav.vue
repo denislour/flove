@@ -23,7 +23,7 @@
 
         <div class="flex items-center h-full ml-auto text-xl font-medium">
           <profile-image v-if="isLoggedIn" />
-          <action-button v-else @click="loginUser" />
+          <action-button text="Sign In" v-else @click="loginUser" />
         </div>
       </div>
     </div>
@@ -46,7 +46,7 @@ export default {
       url: "https://google.com",
       menuItems: [
         "Teams",
-        "Localtions",
+        "Locations",
         "Live of Flove",
         "How we hire",
         "Students",

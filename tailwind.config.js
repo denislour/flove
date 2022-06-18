@@ -10,6 +10,7 @@ module.exports = {
       colors: {
         "grand-gray-1": "#dadce0",
         "grand-blue-1": "#1967d3",
+        "grand-blue-2": "#4285f4",
         "grand-green-1": "#137333",
       },
       boxShadow: {
