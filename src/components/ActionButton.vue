@@ -37,10 +37,10 @@ button {
 }
 
 .primary {
-  @apply text-white rounded bg-grand-blue-1 hover:shadow-blue;
+  @apply text-white rounded bg-brand-blue-1 hover:shadow-blue;
 }
 
 .secondary {
-  @apply text-grand-blue-1 bg-transparent hover:bg-grand-blue-2 hover:text-white;
+  @apply text-brand-blue-1 bg-transparent hover:bg-brand-blue-2 hover:text-white;
 }
 </style>
