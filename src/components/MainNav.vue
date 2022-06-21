@@ -2,7 +2,7 @@
   <header class="w-full text-sm">
     <div class="w-full fixed top-0 left-0 bg-white h-16">
       <div
-        class="flex flex-nowrap h-full p-8 mx-auto border-b border-solid border-grand-gray-1"
+        class="flex flex-nowrap h-full p-8 mx-auto border-b border-solid border-brand-gray-1"
       >
         <a
           :href="url"
@@ -23,9 +23,11 @@
 
         <div class="flex items-center h-full ml-auto text-xl font-medium">
           <profile-image v-if="isLoggedIn" />
-          <action-button text="Sign In" v-else @click="loginUser" />
+          <action-button v-else text="Sign In" @click="loginUser" />
         </div>
       </div>
+
+      <SubNav v-if="isLoggedIn" />
     </div>
   </header>
 </template>
@@ -33,12 +35,14 @@
 <script>
 import ActionButton from "@/components/ActionButton";
 import ProfileImage from "@/components/ProfileImage";
+import SubNav from "@/components/SubNav";
 
 export default {
   name: "MainNav",
   components: {
     ActionButton,
     ProfileImage,
+    SubNav,
   },
   data() {
     return {
