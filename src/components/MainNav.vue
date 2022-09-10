@@ -1,5 +1,5 @@
 <template>
-  <header class="w-full text-sm">
+  <header :class="['w-full', 'text-sm', headerHeightClass]">
     <div class="w-full fixed top-0 left-0 bg-white h-16">
       <div
         class="flex flex-nowrap h-full p-8 mx-auto border-b border-solid border-brand-gray-1"
@@ -59,9 +59,19 @@ export default {
       isLoggedIn: false,
     };
   },
+  computed: {
+    headerHeightClass() {
+      return {
+        "h-16": !this.isLoggedIn,
+        "h-32": this.isLoggedIn,
+      };
+    },
+  },
   methods: {
     loginUser() {
       this.isLoggedIn = true;
+      console.log(this.headerHeightClass);
+      console.log(this.brand);
     },
   },
 };
