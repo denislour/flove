@@ -9,8 +9,8 @@
         </div>
         <div class="col-start-7 col-span-5 self-center justify-self-center">
           <img
-            class="w-80 h-80 object-contain"
-            src="https://images.pexels.com/photos/3205567/pexels-photo-3205567.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            class="w-full h-full object-contain"
+            src="https://careers.google.com/jobs/dist/img/assets/hero-04_1x.5377e160fa426c8b388a861f23cc185b.png"
             alt=""
           />
         </div>
