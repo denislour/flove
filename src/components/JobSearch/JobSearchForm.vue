@@ -6,12 +6,7 @@
     <div class="flex flex-nowrap flex-1 h-full text-base font-light">
       <div class="relative flex items-center flex-1 h-full pr-3">
         <div class="absolute left-0 -top-10">Role</div>
-        <input
-          type="text"
-          v-model="role"
-          placeholder="Software engineer"
-          class="w-full text-lg font-normal focus:outline-none"
-        />
+        <text-input placeholder="Software Engineer" v-model="role" />
       </div>
       <span
         class="flex items-center h-full px-3 border-l border-r border-brand-gray-3"
@@ -20,12 +15,7 @@
       </span>
       <div class="relative flex items-center flex-1 h-full pr-3">
         <div class="absolute left-0 -top-10">Where?</div>
-        <input
-          type="text"
-          v-model="location"
-          placeholder="Los Angeles"
-          class="w-full text-lg font-normal focus:outline-none"
-        />
+        <text-input placeholder="Software Engineer" v-model="location" />
       </div>
       <action-button
         text="Search"
@@ -38,9 +28,10 @@
 
 <script>
 import ActionButton from "@/components/Shared/ActionButton.vue";
+import TextInput from "@/components/Shared/TextInput.vue";
 export default {
   name: "JobSearchForm",
-  components: { ActionButton },
+  components: { ActionButton, TextInput },
   data() {
     return {
       role: "",
